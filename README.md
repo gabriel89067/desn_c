@@ -1,12 +1,12 @@
 ---
 
-## ✅ Objetivo
+## Objetivo
 
 **"Oi 2, sou o 1"** → via API frame para o destino correto.
 
 ---
 
-## ✅ Visão Geral do Modo API
+## Visão Geral do Modo API
 
 O **XBee API mode** usa frames binários com estrutura definida:
 
@@ -42,13 +42,13 @@ O frame para envio de dados é o **Transmit Request (API Frame Type = 0x10)**.
 
 ---
 
-## ✅ 3. Recebendo Frames (API RX – Tipo 0x90)
+##3. Recebendo Frames (API RX – Tipo 0x90)
 
 Você precisa decodificar frames **0x90** para receber mensagens.
 
 ---
 
-## ✅ 4. Organização para os 3 ESPs
+## 4. Organização para os 3 ESPs
 
 Cada ESP deve ter:
 
@@ -75,23 +75,4 @@ Cada ESP deve ter:
 | Checksum               | 1 byte  | `0xFF - (soma dos bytes entre Frame Type e final)` |
 
 ---
-
-## 🧠 Dica: Verificando Endereços
-
-No XCTU, cada XBee mostra:
-
-* **SH** (Serial High)
-* **SL** (Serial Low)
-
-Exemplo:
-
-```
-SH: 0013A200
-SL: 415213A1
-```
-
-Concatene os dois e coloque no `dest_addr[]`.
-
----
-
 
